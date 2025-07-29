@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>David Eskoundos — CV</title>
+  <meta name="description" content="CV of David Eskoundos." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; color: #111; }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 3rem 1.25rem; }
+    h1 { margin: 0 0 0.5rem; font-size: 2rem; }
+    .sub { color: #555; margin-bottom: 1.5rem; }
+    .links a { margin-right: 1rem; text-decoration: none; }
+    .btn { display: inline-block; padding: 0.65rem 1rem; border: 1px solid #111; border-radius: 8px; }
+    .embed { margin-top: 2rem; height: 80vh; border: 1px solid #ddd; border-radius: 8px; }
+    footer { margin-top: 2rem; color: #666; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>David Eskoundos</h1>
+    <div class="sub">Marine & Maritime Intelligent Robotics — CV</div>
+
+    <div class="links">
+      <a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+      <a href="mailto:davideskoundos@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/david-eskoundos" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/DavidMicheal" target="_blank" rel="noopener">GitHub</a>
+    </div>
+
+    <!-- Inline PDF preview (falls back to download link if the browser can’t embed) -->
+    <object class="embed" data="assets/cv.pdf" type="application/pdf">
+      <p>Your browser can’t display PDFs inline. <a href="assets/cv.pdf">Open the CV</a>.</p>
+    </object>
+
+    <footer>© <span id="y"></span> David Eskoundos</footer>
+  </main>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
